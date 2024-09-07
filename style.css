@@ -9,7 +9,9 @@ body{
    align-items: center;
    flex-direction: column;
    justify-content: center;
-   height: 62vw;
+   /* height: 62vw; */
+   /* position:absolute;
+   text-align: center; */
   
 }
 
@@ -44,4 +46,13 @@ h2{
    position: absolute;
    bottom: 0px;
    right: 0px;
+}
+#selecter{
+   height:40px;
+   width: 200px;
+   margin: 10px;
+   font-size: 30px;
+}
+#selecter option{
+   font-size: 40px;
 }

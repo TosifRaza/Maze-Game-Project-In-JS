@@ -4,49 +4,19 @@
    <title>Maze Game</title>
 </head>
 <link rel="stylesheet" href="style.css">
-<body onload="createmaz()">
+<body onload="createmaz()"  overflow-x ="none">
    <h2>Maze Game</h2>
    
       <select  id="selecter">
-         <option value="level1">level1</option>
-         <option value="level2">level2</option>
-         <option value="level3">level3</option>
+         <option value="1">level1</option>
+         <option value="2">level2</option>
+         <option value="3">level3</option>
       </select>
 
       <div class="countainer-met">
          <img id="ret" src="DeliveryBoy.png" height="50px" width="50px" />
          <img id="chise" src="chese.png" height="50px" width="50px" />
       </div>
-
-      <script> 
-         let level1=[
-            [1,0,0,1,0],
-            [1,1,1,1,0],
-            [0,0,1,1,0],
-            [1,1,1,1,0],
-            [0,1,0,1,1]
-         ];
-         let mazeArray=level1;
-         let maz=document.querySelector('.countainer-met');
-         let ret=document.querySelector('#ret');
-         let chise=document.querySelector('#chise');
-         function createmaz(){
-            for (let i = 0; i < mazeArray.length; i++) {
-               let row=document.createElement('div');
-               row.classList.add('row');
-
-               for (let j = 0; j <mazeArray[i].length; j++) {
-                  let column=document.createElement('div');
-                  column.classList.add('column');
-                  if(mazeArray[i][j]==0){
-                     column.classList.add('empty');
-                  }
-                  row.appendChild(column)
-               }
-               maz.appendChild(row);
-            }
-         }
-         
-      </script>
+<script src="script.js"></script>
 </body>
 </html>
